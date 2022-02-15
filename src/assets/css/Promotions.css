@@ -1,0 +1,54 @@
+.delete-btn {
+  width: 40%;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-btn-img {
+  width: 8%;
+}
+
+.div-delete {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.input-promotions {
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 5%;
+  height: 22px;
+  width: 100%;
+}
+
+.btn-add-promotion {
+  background-color: #258ccb;
+  color: white;
+  font-size: 15px;
+  margin-top: 2%;
+  width: 22px;
+  height: 22px;
+  border: solid 1px #258ccb;
+  border-radius: 7px;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-promo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.promo1,
+.promo2 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.hr-total {
+  margin: 0%;
+}

@@ -1,0 +1,137 @@
+.main-container {
+  margin-bottom: 5%;
+}
+
+.btn-back {
+  height: 6rem;
+  width: 8%;
+}
+
+.btn-volver {
+  width: 35px !important;
+  height: 35px;
+  margin-top: 30% !important;
+  margin-left: 25%;
+  opacity: 0.8;
+}
+
+.name-address {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3%;
+}
+
+.hr {
+  width: 80%;
+}
+.email {
+  margin-left: 10%;
+}
+
+.input-address {
+  width: 69.5%;
+  margin-bottom: 10%;
+  border-color: #258ccd;
+}
+
+.input-name,
+.input-email {
+  border-color: #258ccd;
+  width: 100%;
+}
+
+.input-card {
+  width: 69.5%;
+  margin-bottom: 3%;
+  border-color: #258ccd;
+}
+
+.user-data-input-year,
+.user-data-input-month,
+.user-data-input-code {
+  width: 33%;
+  margin-bottom: 3%;
+  border-color: #258ccd;
+}
+
+.user-data-input-month {
+  margin-right: 1%;
+  border-color: #258ccd;
+}
+.user-data-input-year {
+  margin-left: 1%;
+  border-color: #258ccd;
+}
+
+.date-cvv {
+  display: flex;
+  align-items: center;
+}
+
+.date,
+.cvv {
+  width: 30%;
+}
+
+.div-finish {
+  margin-left: 56%;
+}
+
+.btn-done {
+  border: solid 1px #258ccd;
+  border-radius: 7px;
+  padding: 7px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #258ccd;
+}
+
+.cont-order {
+  width: 75% !important;
+  border: solid 2px #238ccd;
+  border-radius: 20px;
+  padding: 50px;
+  margin-top: 5%;
+  color: #494949;
+}
+
+.cont-details {
+  color: #494949;
+}
+
+.subtotal,
+.final-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-finish {
+  border: solid 1px #258ccd;
+  border-radius: 7px;
+  padding: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #258ccd !important;
+  border-color: #258ccd !important;
+}
+
+.btn-primary:disabled {
+  opacity: 0.3 !important;
+}
+
+.link-finish:hover {
+  color: white;
+}
+
+.link-finish {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,27 @@
+.cont-final {
+  width: 50% !important;
+  border: solid 2px #238ccd;
+  border-radius: 20px;
+  padding: 50px;
+  margin-top: 5%;
+  color: #494949;
+}
+
+.thank {
+  margin-bottom: 5%;
+}
+
+.order-title {
+  margin-bottom: 2%;
+}
+
+.btn-print {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1%;
+}
+
+.img-print {
+  width: 3%;
+}

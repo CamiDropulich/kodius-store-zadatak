@@ -1,0 +1,11 @@
+.contMain {
+  width: 75%;
+  border: solid 2px #238ccd;
+  border-radius: 20px;
+  color: #494949;
+}
+
+.main-row {
+  margin-top: 5%;
+  margin-bottom: 4%;
+}

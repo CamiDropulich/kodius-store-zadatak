@@ -1,0 +1,38 @@
+.logo {
+  width: 40%;
+}
+
+.basket-icon {
+  width: 35px;
+  height: 35px;
+  opacity: 0.8;
+}
+
+.row.center {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1%;
+}
+
+.divCarrito {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.divLogo {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.badge {
+  background-color: #258ccd;
+  border: none;
+  color: #ffffff;
+  height: 50%;
+  width: 5%;
+  margin-top: 1%;
+  margin-left: 1%;
+}
