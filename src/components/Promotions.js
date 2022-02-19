@@ -12,7 +12,8 @@ export default function Promotions(props) {
   const [extraProm1, setExtraProm1] = useState(0);
   const [extraProm2, setExtraProm2] = useState(0);
   const [extraProm3, setExtraProm3] = useState(0);
-  const [discountPerCent, setDiscountPerCent] = useState("-");
+  const [discountFivePerCent, setDiscountFivePerCent] = useState(" ");
+  const [discountTwentyPerCent, setDiscountTwentyPerCent] = useState(" ");
   const [discountEUR, setDiscountEUR] = useState(" ");
 
   const [calculoFin, setCalculoFin] = useState(0);
@@ -29,7 +30,7 @@ export default function Promotions(props) {
       extraProm3 == 0
     ) {
       setExtraProm1(extraProm1 + 1);
-      setDiscountPerCent(promoCode);
+      setDiscountTwentyPerCent(promoCode);
       console.log(extraProm1);
     } else if (
       promoCode == "5%OFF" &&
@@ -38,7 +39,7 @@ export default function Promotions(props) {
       extraProm3 < 2
     ) {
       setExtraProm2(extraProm2 + 1);
-      setDiscountPerCent(promoCode);
+      setDiscountFivePerCent(promoCode);
       console.log(extraProm2);
     } else if (promoCode == "5%OFF" && extraProm2 == 1) {
       alert("Code already applied");
@@ -69,25 +70,36 @@ export default function Promotions(props) {
   };
 
   const handleDelCodes = () => {
-    setExtraProm1(0);
-    setExtraProm2(0);
     setExtraProm3(0);
-    setDiscountPerCent(" - ");
     setDiscountEUR("");
     console.log(extraProm1, extraProm2, extraProm3);
   };
 
+  const handleDelPercentCodes = () => {
+    setExtraProm1(0);
+    setExtraProm2(0);
+    setDiscountTwentyPerCent("");
+    setDiscountFivePerCent("");
+  };
   //Math for re-calculating final price with codes
 
   useEffect(() => {
     if (extraProm1 == 1) {
-      setCalculoFin(subTotal / 1.2);
+      setCalculoFin(subTotal - subTotal * 0.2);
     } else if (extraProm2 == 1 && extraProm3 == 1) {
-      setCalculoFin([subTotal - 20] / 1.05);
+      if (subTotal < 20) {
+        setCalculoFin(0);
+      } else {
+        setCalculoFin([subTotal - subTotal * 0.05] - 20);
+      }
     } else if (extraProm2 == 1 && extraProm3 == 0) {
-      setCalculoFin(subTotal / 1.05);
+      setCalculoFin(subTotal - subTotal * 0.05);
     } else if (extraProm2 == 0 && extraProm3 == 1) {
-      setCalculoFin(subTotal - 20);
+      if (subTotal < 20) {
+        setCalculoFin(0);
+      } else {
+        setCalculoFin(subTotal - 20);
+      }
     } else if (extraProm1 == 0 && extraProm2 == 0 && extraProm3 == 0) {
       setCalculoFin(subTotal);
       ctx.setPriceEnd(subTotal);
@@ -117,19 +129,46 @@ export default function Promotions(props) {
 
       <div>
         <div className="carrito-precio">
-          Applied:
           <div className="container">
             <div className="row">
-              <p className="promo1">
-                <strong> {discountPerCent} </strong>
-              </p>
-              <p className="promo1">
-                <strong> {discountEUR} </strong>
-              </p>
+              {discountTwentyPerCent == "20%OFF" && (
+                <div>
+                  <p className="text-promo">
+                    <strong>{discountTwentyPerCent}</strong>
+                  </p>
+                  <button
+                    onClick={handleDelPercentCodes}
+                    className="delete-btn"
+                  >
+                    <img src={Delete} alt="" className="delete-btn-img" />
+                  </button>
+                </div>
+              )}
 
-              <button onClick={handleDelCodes} className="delete-btn">
-                <img src={Delete} alt="" className="delete-btn-img" />
-              </button>
+              {discountFivePerCent == "5%OFF" && (
+                <div>
+                  <p className="text-promo">
+                    <strong>{discountFivePerCent}</strong>
+                  </p>
+                  <button
+                    onClick={handleDelPercentCodes}
+                    className="delete-btn"
+                  >
+                    <img src={Delete} alt="" className="delete-btn-img" />
+                  </button>
+                </div>
+              )}
+
+              {discountEUR == "20EUROFF" && (
+                <div>
+                  <p className="text-promo">
+                    <strong>{discountEUR}</strong>
+                  </p>
+                  <button onClick={handleDelCodes} className="delete-btn">
+                    <img src={Delete} alt="" className="delete-btn-img" />
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </div>

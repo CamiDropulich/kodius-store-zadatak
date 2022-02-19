@@ -35,4 +35,8 @@
   width: 5%;
   margin-top: 1%;
   margin-left: 1%;
+  display: flex !important;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }

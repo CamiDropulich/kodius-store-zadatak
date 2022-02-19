@@ -14,78 +14,50 @@
   margin-left: 25%;
   opacity: 0.8;
 }
+.main-container p {
+  margin-bottom: 0%;
+}
 
-.name-address {
+.main-container hr {
+  margin-top: 0%;
+  margin-bottom: 2%;
+  width: 85%;
+}
+
+.main-container h6 {
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+
+.main-container input {
+  border-color: #258ccd;
+  width: 70%;
+  font-size: 14px;
+}
+
+.div-month,
+.div-year {
+  width: 24%;
+}
+
+.div-year {
+  margin-left: 6%;
+}
+
+.div-month-year {
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: 3%;
+}
+.text-danger {
+  font-size: 12px;
 }
 
-.hr {
-  width: 80%;
-}
-.email {
-  margin-left: 10%;
+.div-zip input,
+.div-cvv input {
+  width: 12%;
 }
 
-.input-address {
-  width: 69.5%;
-  margin-bottom: 10%;
-  border-color: #258ccd;
-}
-
-.input-name,
-.input-email {
-  border-color: #258ccd;
-  width: 100%;
-}
-
-.input-card {
-  width: 69.5%;
-  margin-bottom: 3%;
-  border-color: #258ccd;
-}
-
-.user-data-input-year,
-.user-data-input-month,
-.user-data-input-code {
-  width: 33%;
-  margin-bottom: 3%;
-  border-color: #258ccd;
-}
-
-.user-data-input-month {
-  margin-right: 1%;
-  border-color: #258ccd;
-}
-.user-data-input-year {
-  margin-left: 1%;
-  border-color: #258ccd;
-}
-
-.date-cvv {
-  display: flex;
-  align-items: center;
-}
-
-.date,
-.cvv {
-  width: 30%;
-}
-
-.div-finish {
-  margin-left: 56%;
-}
-
-.btn-done {
-  border: solid 1px #258ccd;
-  border-radius: 7px;
-  padding: 7px;
-  padding-right: 20px;
-  padding-left: 20px;
-  cursor: pointer;
-  color: white;
-  background-color: #258ccd;
+.div-number input {
+  width: 25%;
 }
 
 .cont-order {
@@ -134,4 +106,12 @@
 .link-finish {
   text-decoration: none;
   color: white;
+}
+
+.div-btn {
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: flex-end;
 }

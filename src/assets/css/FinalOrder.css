@@ -25,3 +25,22 @@
 .img-print {
   width: 3%;
 }
+
+@media (min-width: 760px) and (max-width: 1200px) {
+  .img-print {
+    width: 7%;
+  }
+}
+
+@media (max-width: 760px) {
+  .img-print {
+    width: 10%;
+  }
+  .cont-final h5,
+  .subtotal,
+  .final-price,
+  .item-basket-name,
+  .text-right {
+    font-size: 13px;
+  }
+}

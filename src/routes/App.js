@@ -3,6 +3,7 @@ import Home from "../containers/Home";
 import Checkout from "../containers/Checkout";
 import UsarContexto from "../context/UsarContexto";
 import FinalOrder from "../containers/FinalOrder";
+import Helmet from "react-helmet";
 
 function App() {
   return (
@@ -13,6 +14,11 @@ function App() {
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
         crossorigin="anonymous"
       />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Kodius Store</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <BrowserRouter>
         <UsarContexto>
           <Routes>

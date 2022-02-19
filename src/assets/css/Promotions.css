@@ -1,12 +1,17 @@
 .delete-btn {
-  width: 40%;
+  display: inline-block;
   padding: 0px;
-  display: flex;
-  justify-content: flex-end;
+  width: 10%;
 }
 
 .delete-btn-img {
-  width: 8%;
+  width: 80%;
+}
+
+.text-promo {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 1%;
 }
 
 .div-delete {
@@ -41,6 +46,7 @@
 .add-promo {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 5%;
 }
 
 .promo1,
